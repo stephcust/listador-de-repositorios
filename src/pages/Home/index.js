@@ -27,7 +27,7 @@ function Home(props) {
 
     return (
         <S.HomeContainer>
-            <S.Label>Buque repositórios de usuários no GitHub</S.Label>
+            <S.Label>Busque repositórios de usuários no GitHub</S.Label>
             <S.Content>
                 <S.Input className="usuarioInput" placeholder="Usuário" value={usuario} onChange={e => setUsuario(e.target.value)} />
                 <S.Button type="button" onClick={handlePesquisa}>Pesquisar</S.Button>

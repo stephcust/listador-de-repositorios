@@ -13,9 +13,9 @@ function Home(props) {
             .then(response => {
                 const repositories = response.data;
                 const repositoriesName = [];
-                repositories.map(repository => {
+                repositories.map(repository => (
                     repositoriesName.push(repository.name)
-                });
+                ));
                 localStorage.setItem('repositoriesName', JSON.stringify(repositoriesName));
                 setErro(false);
                 navigate('/repositories');

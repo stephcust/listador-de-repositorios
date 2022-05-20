@@ -17,7 +17,7 @@ export default function Repositories() {
         } else {
             navigate('/');
         }
-    }, []);
+    }, [navigate]);
 
     return(
         <S.Container>

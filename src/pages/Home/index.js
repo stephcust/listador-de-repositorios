@@ -18,7 +18,6 @@ function Home(props) {
                 ));
                 localStorage.setItem('repositoriesName', JSON.stringify(repositoriesName));
                 setErro(false);
-                //eslint-disable-next-line
                 navigate('/repositories');
             })
             .catch(err => {
